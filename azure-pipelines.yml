@@ -14,9 +14,9 @@ steps:
   displayName: 'Use .NET SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
-# Ajoutez cette tâche au début du bloc 'steps:'
+
 - task: NodeTool@0
-  displayName: 'Use Node.js 16.x' # Node 16 est un bon compromis de compatibilité
+  displayName: 'Use Node.js 16.x' 
   inputs:
     versionSpec: '16.x'
 
